@@ -1,0 +1,5 @@
+.item-restaurant{--color-restaurant:oklch(20% .008 150);--color-restaurant-type:oklch(93% .028 85)}
+.item-restaurant figure{background:var(--color-restaurant);aspect-ratio:1.4}.item-restaurant figure img{width:100%;height:100%;filter:brightness(.62)}.item-restaurant .card-initials{inset:50% 0 auto;text-align:center;transform:translateY(-50%);font-size:clamp(4rem,10vw,11rem);font-weight:300;letter-spacing:-.05em;color:var(--color-restaurant-type)}
+@media(min-width:768px){.item-restaurant{grid-column:1/-1}.item-restaurant figure{height:550px;aspect-ratio:auto}.item-restaurant>p{max-width:50ch}}
+
+.item-restaurant{--color-restaurant:oklch(95% .012 85);--color-restaurant-type:oklch(24% .018 80)}.item-restaurant figure{position:relative}.item-restaurant figure img{width:44%;height:90%;position:absolute;right:6%;bottom:0;filter:none;clip-path:inset(0 0 0 0 round 50% 50% 0 0)}.item-restaurant .card-initials{inset:42% auto auto 5%;font-size:clamp(2rem,5.3vw,6rem);letter-spacing:-.04em;text-align:left}
