@@ -1,7 +1,27 @@
-@font-face {font-family:'Great Vibes';font-style:normal;font-weight:400;font-display:swap;src:url('./great-vibes.ttf') format('truetype');}
-.item-paper { --font-handwritten:'Great Vibes','Cormorant Garamond',Georgia,serif; --color-card-brown:oklch(30% .058 45); }
-.item-paper figure { border:1px solid var(--color-rule); transform:rotate(-2deg); }
-.item-paper .card-initials { color:var(--color-card-brown); font-size:clamp(2.5rem,6vw,5rem); text-align:center; bottom:18%; }
-.paper-card-word { position:absolute;top:15%;inset-inline:0;text-align:center;font-family:var(--font-handwritten);font-size:clamp(4rem,7vw,7rem);color:var(--color-card-brown);line-height:1.3; }
-.paper-card-thread { position:absolute;inset:40% 15% 10%;width:70%;height:50%;fill:none;stroke:var(--color-card-brown);stroke-width:1.2;opacity:.6; }
-@media(min-width:48rem) {.collection-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:4rem 3rem;}.item-theatre {padding-top:0;}.item-paper {padding-top:4rem;}}
+/* Четвёртое приглашение. Имена, дата и QR берутся из общего config.js.
+   Здесь — отдельные фото, места и подписи бумажного варианта.
+   Фото: ./assets/name.webp в коллекции, ./assets/name.webp в автономной папке.
+   Пустое фото оставляет красивую бумажную заготовку. */
+window.WEDDING.themes.paper = {
+  photo: './assets/paper-texture.webp',
+  photoAlt: 'Складки тёплой хлопковой бумаги',
+  palette: ['#eee2c4', '#523a2b', '#94533b'],
+  colorNames: ['Сливочный', 'Шоколадный', 'Терракотовый']
+};
+window.WEDDING.paper = {
+  ceremonyTime: '14:30',
+  ceremonyVenue: 'Название вашего ЗАГСа',
+  ceremonyAddress: 'Адрес регистрации',
+  ceremonyMapUrl: '',
+  bridePhoto: '',
+  groomPhoto: '',
+  togetherPhoto: '',
+  bridePhotoAlt: 'Детская фотография невесты',
+  groomPhotoAlt: 'Детская фотография жениха',
+  togetherPhotoAlt: 'Наша любимая совместная фотография',
+  brideCaption: 'Невеста',
+  groomCaption: 'Жених',
+  togetherCaption: 'Наша любимая история',
+  welcomeHeading: 'Вы — часть нашей истории.',
+  closing: 'Две судьбы. Одна нить.'
+};
